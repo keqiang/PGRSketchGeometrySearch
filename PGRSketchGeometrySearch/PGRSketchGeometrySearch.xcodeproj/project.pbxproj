@@ -101,6 +101,10 @@
 		5F38AFBF19343F4700D4A38E /* DollarPointCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarPointCloud.m; sourceTree = "<group>"; };
 		5F38AFC019343F4700D4A38E /* DollarResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DollarResult.h; sourceTree = "<group>"; };
 		5F38AFC119343F4700D4A38E /* DollarResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarResult.m; sourceTree = "<group>"; };
+		5F8266F919346305007B9051 /* small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small.png; sourceTree = "<group>"; };
+		5F8266FA19346314007B9051 /* large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = large.png; sourceTree = "<group>"; };
+		5F8266FB1934662D007B9051 /* lunchsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lunchsmall.png; sourceTree = "<group>"; };
+		5F8266FC19346638007B9051 /* lunchlarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lunchlarge.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,10 @@
 		5F38AF5619343EA800D4A38E = {
 			isa = PBXGroup;
 			children = (
+				5F8266FC19346638007B9051 /* lunchlarge.png */,
+				5F8266FB1934662D007B9051 /* lunchsmall.png */,
+				5F8266FA19346314007B9051 /* large.png */,
+				5F8266F919346305007B9051 /* small.png */,
 				5F38AF9119343EC000D4A38E /* PGRStoryboard.storyboard */,
 				5F38AF6819343EA800D4A38E /* PGRSketchGeometrySearch */,
 				5F38AF8119343EA800D4A38E /* PGRSketchGeometrySearchTests */,
@@ -475,8 +483,8 @@
 		5F38AF8C19343EA800D4A38E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PGRSketchGeometrySearch/PGRSketchGeometrySearch-Prefix.pch";
@@ -489,8 +497,8 @@
 		5F38AF8D19343EA800D4A38E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PGRSketchGeometrySearch/PGRSketchGeometrySearch-Prefix.pch";
@@ -559,6 +567,7 @@
 				5F38AF8D19343EA800D4A38E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F38AF8E19343EA800D4A38E /* Build configuration list for PBXNativeTarget "PGRSketchGeometrySearchTests" */ = {
 			isa = XCConfigurationList;
@@ -567,6 +576,7 @@
 				5F38AF9019343EA800D4A38E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
