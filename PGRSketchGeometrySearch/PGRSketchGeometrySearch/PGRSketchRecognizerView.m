@@ -530,14 +530,25 @@
     CGContextSetLineCap(context, kCGLineCapRound);
     [[UIColor redColor] set];
     
-    
-    for (DollarPoint *point in touchPoints) {
-        CGContextFillRect(context, CGRectMake(point.x - 5, point.y - 5, 10, 10));
+    if ([touchPoints count] > 0) {
+        for (int i = 0; i < [touchPoints count] - 1; ++i) {
+            DollarPoint *point = [touchPoints objectAtIndex:i];
+            CGContextMoveToPoint(context, point.x, point.y);
+            DollarPoint *nextPoint = [touchPoints objectAtIndex:i+1];
+            CGContextAddLineToPoint(context, nextPoint.x, nextPoint.y);
+            CGContextStrokePath(context);
+        }
     }
     
     for (PGRStroke *stroke in [strokes allValues]) {
-        for (DollarPoint *point in [stroke points]) {
-            CGContextFillRect(context, CGRectMake(point.x - 5, point.y - 5, 10, 10));
+        if ([[stroke points] count] > 0) {
+            for (int i = 0; i < [[stroke points] count] - 1; ++i) {
+                DollarPoint *point = [[stroke points] objectAtIndex:i];
+                CGContextMoveToPoint(context, point.x, point.y);
+                DollarPoint *nextPoint = [[stroke points] objectAtIndex:i+1];
+                CGContextAddLineToPoint(context, nextPoint.x, nextPoint.y);
+                CGContextStrokePath(context);
+            }
         }
     }
     
