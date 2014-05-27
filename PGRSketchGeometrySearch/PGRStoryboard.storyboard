@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="hef-hf-RNS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Sketch Recognizer View Controller - Sketch Below-->
+        <scene sceneID="r62-d2-AMb">
+            <objects>
+                <viewController id="N62-5O-iqV" customClass="PGRSketchRecognizerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jta-Yd-HeP"/>
+                        <viewControllerLayoutGuide type="bottom" id="gkL-pn-8HF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7K0-Iw-aFG">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sketch Below" id="CS5-ze-JK2">
+                        <barButtonItem key="leftBarButtonItem" title="Clean" id="0aJ-gj-hXP">
+                            <connections>
+                                <action selector="cleanCanvas:" destination="N62-5O-iqV" id="kSu-7E-hjX"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Search" id="CVe-5K-z8v">
+                            <connections>
+                                <segue destination="j77-eE-znO" kind="push" id="se3-Qp-8ck"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dS6-t1-cK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-452" y="-906"/>
+        </scene>
+        <!--Web Result View Controller-->
+        <scene sceneID="OFH-3b-oBn">
+            <objects>
+                <viewController id="j77-eE-znO" customClass="PGRWebResultViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OaX-VL-jMC"/>
+                        <viewControllerLayoutGuide type="bottom" id="0VM-QV-cwS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q4C-N8-CkR">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ggX-ix-uJc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F4z-wL-eKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="635" y="-906"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ggx-hv-8wT">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="hef-hf-RNS" sceneMemberID="viewController">
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tkE-dB-A1f">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="N62-5O-iqV" kind="relationship" relationship="rootViewController" id="cSh-Rd-KM2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Xo-ag-7as" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1575" y="-1003"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

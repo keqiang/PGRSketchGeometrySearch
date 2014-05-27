@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F38AF6319343EA800D4A38E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F38AF6219343EA800D4A38E /* Foundation.framework */; };
+		5F38AF6519343EA800D4A38E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F38AF6419343EA800D4A38E /* CoreGraphics.framework */; };
+		5F38AF6719343EA800D4A38E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F38AF6619343EA800D4A38E /* UIKit.framework */; };
+		5F38AF6D19343EA800D4A38E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F38AF6B19343EA800D4A38E /* InfoPlist.strings */; };
+		5F38AF6F19343EA800D4A38E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AF6E19343EA800D4A38E /* main.m */; };
+		5F38AF7319343EA800D4A38E /* PGRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AF7219343EA800D4A38E /* PGRAppDelegate.m */; };
+		5F38AF7519343EA800D4A38E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F38AF7419343EA800D4A38E /* Images.xcassets */; };
+		5F38AF7C19343EA800D4A38E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F38AF7B19343EA800D4A38E /* XCTest.framework */; };
+		5F38AF7D19343EA800D4A38E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F38AF6219343EA800D4A38E /* Foundation.framework */; };
+		5F38AF7E19343EA800D4A38E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F38AF6619343EA800D4A38E /* UIKit.framework */; };
+		5F38AF8619343EA800D4A38E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F38AF8419343EA800D4A38E /* InfoPlist.strings */; };
+		5F38AF8819343EA800D4A38E /* PGRSketchGeometrySearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AF8719343EA800D4A38E /* PGRSketchGeometrySearchTests.m */; };
+		5F38AF9219343EC000D4A38E /* PGRStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F38AF9119343EC000D4A38E /* PGRStoryboard.storyboard */; };
+		5F38AFA919343EF600D4A38E /* PGRCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AF9419343EF600D4A38E /* PGRCircle.m */; };
+		5F38AFAA19343EF600D4A38E /* PGRControlPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AF9619343EF600D4A38E /* PGRControlPoint.m */; };
+		5F38AFAB19343EF600D4A38E /* PGRLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AF9819343EF600D4A38E /* PGRLine.m */; };
+		5F38AFAC19343EF600D4A38E /* PGRRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AF9A19343EF600D4A38E /* PGRRectangle.m */; };
+		5F38AFAD19343EF600D4A38E /* PGRShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AF9C19343EF600D4A38E /* PGRShape.m */; };
+		5F38AFAE19343EF600D4A38E /* PGRSketchRecognizerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AF9E19343EF600D4A38E /* PGRSketchRecognizerView.m */; };
+		5F38AFAF19343EF600D4A38E /* PGRSketchRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AFA019343EF600D4A38E /* PGRSketchRecognizerViewController.m */; };
+		5F38AFB019343EF600D4A38E /* PGRStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AFA219343EF600D4A38E /* PGRStroke.m */; };
+		5F38AFB119343EF600D4A38E /* PGRTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AFA419343EF600D4A38E /* PGRTriangle.m */; };
+		5F38AFB219343EF600D4A38E /* PGRUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AFA619343EF600D4A38E /* PGRUtil.m */; };
+		5F38AFB319343EF600D4A38E /* PGRWebResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AFA819343EF600D4A38E /* PGRWebResultViewController.m */; };
+		5F38AFB619343F2E00D4A38E /* DollarDefaultGestures.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AFB519343F2E00D4A38E /* DollarDefaultGestures.m */; };
+		5F38AFC219343F4700D4A38E /* DollarP.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AFB919343F4700D4A38E /* DollarP.m */; };
+		5F38AFC319343F4700D4A38E /* DollarPGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AFBB19343F4700D4A38E /* DollarPGestureRecognizer.m */; };
+		5F38AFC419343F4700D4A38E /* DollarPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AFBD19343F4700D4A38E /* DollarPoint.m */; };
+		5F38AFC519343F4700D4A38E /* DollarPointCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AFBF19343F4700D4A38E /* DollarPointCloud.m */; };
+		5F38AFC619343F4700D4A38E /* DollarResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38AFC119343F4700D4A38E /* DollarResult.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F38AF7F19343EA800D4A38E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F38AF5719343EA800D4A38E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F38AF5E19343EA800D4A38E;
+			remoteInfo = PGRSketchGeometrySearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F38AF5F19343EA800D4A38E /* PGRSketchGeometrySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PGRSketchGeometrySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F38AF6219343EA800D4A38E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5F38AF6419343EA800D4A38E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5F38AF6619343EA800D4A38E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5F38AF6A19343EA800D4A38E /* PGRSketchGeometrySearch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PGRSketchGeometrySearch-Info.plist"; sourceTree = "<group>"; };
+		5F38AF6C19343EA800D4A38E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F38AF6E19343EA800D4A38E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F38AF7019343EA800D4A38E /* PGRSketchGeometrySearch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PGRSketchGeometrySearch-Prefix.pch"; sourceTree = "<group>"; };
+		5F38AF7119343EA800D4A38E /* PGRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGRAppDelegate.h; sourceTree = "<group>"; };
+		5F38AF7219343EA800D4A38E /* PGRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGRAppDelegate.m; sourceTree = "<group>"; };
+		5F38AF7419343EA800D4A38E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5F38AF7A19343EA800D4A38E /* PGRSketchGeometrySearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PGRSketchGeometrySearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F38AF7B19343EA800D4A38E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5F38AF8319343EA800D4A38E /* PGRSketchGeometrySearchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PGRSketchGeometrySearchTests-Info.plist"; sourceTree = "<group>"; };
+		5F38AF8519343EA800D4A38E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F38AF8719343EA800D4A38E /* PGRSketchGeometrySearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGRSketchGeometrySearchTests.m; sourceTree = "<group>"; };
+		5F38AF9119343EC000D4A38E /* PGRStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PGRStoryboard.storyboard; sourceTree = "<group>"; };
+		5F38AF9319343EF600D4A38E /* PGRCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGRCircle.h; sourceTree = "<group>"; };
+		5F38AF9419343EF600D4A38E /* PGRCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGRCircle.m; sourceTree = "<group>"; };
+		5F38AF9519343EF600D4A38E /* PGRControlPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGRControlPoint.h; sourceTree = "<group>"; };
+		5F38AF9619343EF600D4A38E /* PGRControlPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGRControlPoint.m; sourceTree = "<group>"; };
+		5F38AF9719343EF600D4A38E /* PGRLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGRLine.h; sourceTree = "<group>"; };
+		5F38AF9819343EF600D4A38E /* PGRLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGRLine.m; sourceTree = "<group>"; };
+		5F38AF9919343EF600D4A38E /* PGRRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGRRectangle.h; sourceTree = "<group>"; };
+		5F38AF9A19343EF600D4A38E /* PGRRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGRRectangle.m; sourceTree = "<group>"; };
+		5F38AF9B19343EF600D4A38E /* PGRShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGRShape.h; sourceTree = "<group>"; };
+		5F38AF9C19343EF600D4A38E /* PGRShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGRShape.m; sourceTree = "<group>"; };
+		5F38AF9D19343EF600D4A38E /* PGRSketchRecognizerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGRSketchRecognizerView.h; sourceTree = "<group>"; };
+		5F38AF9E19343EF600D4A38E /* PGRSketchRecognizerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGRSketchRecognizerView.m; sourceTree = "<group>"; };
+		5F38AF9F19343EF600D4A38E /* PGRSketchRecognizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGRSketchRecognizerViewController.h; sourceTree = "<group>"; };
+		5F38AFA019343EF600D4A38E /* PGRSketchRecognizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGRSketchRecognizerViewController.m; sourceTree = "<group>"; };
+		5F38AFA119343EF600D4A38E /* PGRStroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGRStroke.h; sourceTree = "<group>"; };
+		5F38AFA219343EF600D4A38E /* PGRStroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGRStroke.m; sourceTree = "<group>"; };
+		5F38AFA319343EF600D4A38E /* PGRTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGRTriangle.h; sourceTree = "<group>"; };
+		5F38AFA419343EF600D4A38E /* PGRTriangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGRTriangle.m; sourceTree = "<group>"; };
+		5F38AFA519343EF600D4A38E /* PGRUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGRUtil.h; sourceTree = "<group>"; };
+		5F38AFA619343EF600D4A38E /* PGRUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGRUtil.m; sourceTree = "<group>"; };
+		5F38AFA719343EF600D4A38E /* PGRWebResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGRWebResultViewController.h; sourceTree = "<group>"; };
+		5F38AFA819343EF600D4A38E /* PGRWebResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGRWebResultViewController.m; sourceTree = "<group>"; };
+		5F38AFB519343F2E00D4A38E /* DollarDefaultGestures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarDefaultGestures.m; sourceTree = "<group>"; };
+		5F38AFB719343F4700D4A38E /* DollarDefaultGestures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DollarDefaultGestures.h; sourceTree = "<group>"; };
+		5F38AFB819343F4700D4A38E /* DollarP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DollarP.h; sourceTree = "<group>"; };
+		5F38AFB919343F4700D4A38E /* DollarP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarP.m; sourceTree = "<group>"; };
+		5F38AFBA19343F4700D4A38E /* DollarPGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DollarPGestureRecognizer.h; sourceTree = "<group>"; };
+		5F38AFBB19343F4700D4A38E /* DollarPGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarPGestureRecognizer.m; sourceTree = "<group>"; };
+		5F38AFBC19343F4700D4A38E /* DollarPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DollarPoint.h; sourceTree = "<group>"; };
+		5F38AFBD19343F4700D4A38E /* DollarPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarPoint.m; sourceTree = "<group>"; };
+		5F38AFBE19343F4700D4A38E /* DollarPointCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DollarPointCloud.h; sourceTree = "<group>"; };
+		5F38AFBF19343F4700D4A38E /* DollarPointCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarPointCloud.m; sourceTree = "<group>"; };
+		5F38AFC019343F4700D4A38E /* DollarResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DollarResult.h; sourceTree = "<group>"; };
+		5F38AFC119343F4700D4A38E /* DollarResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarResult.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F38AF5C19343EA800D4A38E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F38AF6519343EA800D4A38E /* CoreGraphics.framework in Frameworks */,
+				5F38AF6719343EA800D4A38E /* UIKit.framework in Frameworks */,
+				5F38AF6319343EA800D4A38E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F38AF7719343EA800D4A38E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F38AF7C19343EA800D4A38E /* XCTest.framework in Frameworks */,
+				5F38AF7E19343EA800D4A38E /* UIKit.framework in Frameworks */,
+				5F38AF7D19343EA800D4A38E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F38AF5619343EA800D4A38E = {
+			isa = PBXGroup;
+			children = (
+				5F38AF9119343EC000D4A38E /* PGRStoryboard.storyboard */,
+				5F38AF6819343EA800D4A38E /* PGRSketchGeometrySearch */,
+				5F38AF8119343EA800D4A38E /* PGRSketchGeometrySearchTests */,
+				5F38AF6119343EA800D4A38E /* Frameworks */,
+				5F38AF6019343EA800D4A38E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F38AF6019343EA800D4A38E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F38AF5F19343EA800D4A38E /* PGRSketchGeometrySearch.app */,
+				5F38AF7A19343EA800D4A38E /* PGRSketchGeometrySearchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F38AF6119343EA800D4A38E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F38AF6219343EA800D4A38E /* Foundation.framework */,
+				5F38AF6419343EA800D4A38E /* CoreGraphics.framework */,
+				5F38AF6619343EA800D4A38E /* UIKit.framework */,
+				5F38AF7B19343EA800D4A38E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F38AF6819343EA800D4A38E /* PGRSketchGeometrySearch */ = {
+			isa = PBXGroup;
+			children = (
+				5F38AFB419343F1600D4A38E /* DollarP */,
+				5F38AF9319343EF600D4A38E /* PGRCircle.h */,
+				5F38AF9419343EF600D4A38E /* PGRCircle.m */,
+				5F38AF9519343EF600D4A38E /* PGRControlPoint.h */,
+				5F38AF9619343EF600D4A38E /* PGRControlPoint.m */,
+				5F38AF9719343EF600D4A38E /* PGRLine.h */,
+				5F38AF9819343EF600D4A38E /* PGRLine.m */,
+				5F38AF9919343EF600D4A38E /* PGRRectangle.h */,
+				5F38AF9A19343EF600D4A38E /* PGRRectangle.m */,
+				5F38AF9B19343EF600D4A38E /* PGRShape.h */,
+				5F38AF9C19343EF600D4A38E /* PGRShape.m */,
+				5F38AF9D19343EF600D4A38E /* PGRSketchRecognizerView.h */,
+				5F38AF9E19343EF600D4A38E /* PGRSketchRecognizerView.m */,
+				5F38AF9F19343EF600D4A38E /* PGRSketchRecognizerViewController.h */,
+				5F38AFA019343EF600D4A38E /* PGRSketchRecognizerViewController.m */,
+				5F38AFA119343EF600D4A38E /* PGRStroke.h */,
+				5F38AFA219343EF600D4A38E /* PGRStroke.m */,
+				5F38AFA319343EF600D4A38E /* PGRTriangle.h */,
+				5F38AFA419343EF600D4A38E /* PGRTriangle.m */,
+				5F38AFA519343EF600D4A38E /* PGRUtil.h */,
+				5F38AFA619343EF600D4A38E /* PGRUtil.m */,
+				5F38AFA719343EF600D4A38E /* PGRWebResultViewController.h */,
+				5F38AFA819343EF600D4A38E /* PGRWebResultViewController.m */,
+				5F38AF7119343EA800D4A38E /* PGRAppDelegate.h */,
+				5F38AF7219343EA800D4A38E /* PGRAppDelegate.m */,
+				5F38AF7419343EA800D4A38E /* Images.xcassets */,
+				5F38AF6919343EA800D4A38E /* Supporting Files */,
+			);
+			path = PGRSketchGeometrySearch;
+			sourceTree = "<group>";
+		};
+		5F38AF6919343EA800D4A38E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F38AF6A19343EA800D4A38E /* PGRSketchGeometrySearch-Info.plist */,
+				5F38AF6B19343EA800D4A38E /* InfoPlist.strings */,
+				5F38AF6E19343EA800D4A38E /* main.m */,
+				5F38AF7019343EA800D4A38E /* PGRSketchGeometrySearch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F38AF8119343EA800D4A38E /* PGRSketchGeometrySearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F38AF8719343EA800D4A38E /* PGRSketchGeometrySearchTests.m */,
+				5F38AF8219343EA800D4A38E /* Supporting Files */,
+			);
+			path = PGRSketchGeometrySearchTests;
+			sourceTree = "<group>";
+		};
+		5F38AF8219343EA800D4A38E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F38AF8319343EA800D4A38E /* PGRSketchGeometrySearchTests-Info.plist */,
+				5F38AF8419343EA800D4A38E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F38AFB419343F1600D4A38E /* DollarP */ = {
+			isa = PBXGroup;
+			children = (
+				5F38AFB719343F4700D4A38E /* DollarDefaultGestures.h */,
+				5F38AFB819343F4700D4A38E /* DollarP.h */,
+				5F38AFB919343F4700D4A38E /* DollarP.m */,
+				5F38AFBA19343F4700D4A38E /* DollarPGestureRecognizer.h */,
+				5F38AFBB19343F4700D4A38E /* DollarPGestureRecognizer.m */,
+				5F38AFBC19343F4700D4A38E /* DollarPoint.h */,
+				5F38AFBD19343F4700D4A38E /* DollarPoint.m */,
+				5F38AFBE19343F4700D4A38E /* DollarPointCloud.h */,
+				5F38AFBF19343F4700D4A38E /* DollarPointCloud.m */,
+				5F38AFC019343F4700D4A38E /* DollarResult.h */,
+				5F38AFC119343F4700D4A38E /* DollarResult.m */,
+				5F38AFB519343F2E00D4A38E /* DollarDefaultGestures.m */,
+			);
+			name = DollarP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F38AF5E19343EA800D4A38E /* PGRSketchGeometrySearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F38AF8B19343EA800D4A38E /* Build configuration list for PBXNativeTarget "PGRSketchGeometrySearch" */;
+			buildPhases = (
+				5F38AF5B19343EA800D4A38E /* Sources */,
+				5F38AF5C19343EA800D4A38E /* Frameworks */,
+				5F38AF5D19343EA800D4A38E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PGRSketchGeometrySearch;
+			productName = PGRSketchGeometrySearch;
+			productReference = 5F38AF5F19343EA800D4A38E /* PGRSketchGeometrySearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F38AF7919343EA800D4A38E /* PGRSketchGeometrySearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F38AF8E19343EA800D4A38E /* Build configuration list for PBXNativeTarget "PGRSketchGeometrySearchTests" */;
+			buildPhases = (
+				5F38AF7619343EA800D4A38E /* Sources */,
+				5F38AF7719343EA800D4A38E /* Frameworks */,
+				5F38AF7819343EA800D4A38E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F38AF8019343EA800D4A38E /* PBXTargetDependency */,
+			);
+			name = PGRSketchGeometrySearchTests;
+			productName = PGRSketchGeometrySearchTests;
+			productReference = 5F38AF7A19343EA800D4A38E /* PGRSketchGeometrySearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F38AF5719343EA800D4A38E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PGR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Li Keqiang";
+				TargetAttributes = {
+					5F38AF5E19343EA800D4A38E = {
+						DevelopmentTeam = 7CRMDM83CA;
+					};
+					5F38AF7919343EA800D4A38E = {
+						TestTargetID = 5F38AF5E19343EA800D4A38E;
+					};
+				};
+			};
+			buildConfigurationList = 5F38AF5A19343EA800D4A38E /* Build configuration list for PBXProject "PGRSketchGeometrySearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5F38AF5619343EA800D4A38E;
+			productRefGroup = 5F38AF6019343EA800D4A38E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F38AF5E19343EA800D4A38E /* PGRSketchGeometrySearch */,
+				5F38AF7919343EA800D4A38E /* PGRSketchGeometrySearchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F38AF5D19343EA800D4A38E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F38AF9219343EC000D4A38E /* PGRStoryboard.storyboard in Resources */,
+				5F38AF6D19343EA800D4A38E /* InfoPlist.strings in Resources */,
+				5F38AF7519343EA800D4A38E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F38AF7819343EA800D4A38E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F38AF8619343EA800D4A38E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F38AF5B19343EA800D4A38E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F38AFC519343F4700D4A38E /* DollarPointCloud.m in Sources */,
+				5F38AFAB19343EF600D4A38E /* PGRLine.m in Sources */,
+				5F38AFAD19343EF600D4A38E /* PGRShape.m in Sources */,
+				5F38AFC219343F4700D4A38E /* DollarP.m in Sources */,
+				5F38AFC619343F4700D4A38E /* DollarResult.m in Sources */,
+				5F38AFAE19343EF600D4A38E /* PGRSketchRecognizerView.m in Sources */,
+				5F38AFB019343EF600D4A38E /* PGRStroke.m in Sources */,
+				5F38AFAA19343EF600D4A38E /* PGRControlPoint.m in Sources */,
+				5F38AFB119343EF600D4A38E /* PGRTriangle.m in Sources */,
+				5F38AFA919343EF600D4A38E /* PGRCircle.m in Sources */,
+				5F38AFB619343F2E00D4A38E /* DollarDefaultGestures.m in Sources */,
+				5F38AFB219343EF600D4A38E /* PGRUtil.m in Sources */,
+				5F38AFC319343F4700D4A38E /* DollarPGestureRecognizer.m in Sources */,
+				5F38AF7319343EA800D4A38E /* PGRAppDelegate.m in Sources */,
+				5F38AFC419343F4700D4A38E /* DollarPoint.m in Sources */,
+				5F38AFB319343EF600D4A38E /* PGRWebResultViewController.m in Sources */,
+				5F38AF6F19343EA800D4A38E /* main.m in Sources */,
+				5F38AFAC19343EF600D4A38E /* PGRRectangle.m in Sources */,
+				5F38AFAF19343EF600D4A38E /* PGRSketchRecognizerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F38AF7619343EA800D4A38E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F38AF8819343EA800D4A38E /* PGRSketchGeometrySearchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F38AF8019343EA800D4A38E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F38AF5E19343EA800D4A38E /* PGRSketchGeometrySearch */;
+			targetProxy = 5F38AF7F19343EA800D4A38E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F38AF6B19343EA800D4A38E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F38AF6C19343EA800D4A38E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5F38AF8419343EA800D4A38E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F38AF8519343EA800D4A38E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F38AF8919343EA800D4A38E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		5F38AF8A19343EA800D4A38E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F38AF8C19343EA800D4A38E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PGRSketchGeometrySearch/PGRSketchGeometrySearch-Prefix.pch";
+				INFOPLIST_FILE = "PGRSketchGeometrySearch/PGRSketchGeometrySearch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5F38AF8D19343EA800D4A38E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PGRSketchGeometrySearch/PGRSketchGeometrySearch-Prefix.pch";
+				INFOPLIST_FILE = "PGRSketchGeometrySearch/PGRSketchGeometrySearch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5F38AF8F19343EA800D4A38E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PGRSketchGeometrySearch.app/PGRSketchGeometrySearch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PGRSketchGeometrySearch/PGRSketchGeometrySearch-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PGRSketchGeometrySearchTests/PGRSketchGeometrySearchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5F38AF9019343EA800D4A38E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PGRSketchGeometrySearch.app/PGRSketchGeometrySearch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PGRSketchGeometrySearch/PGRSketchGeometrySearch-Prefix.pch";
+				INFOPLIST_FILE = "PGRSketchGeometrySearchTests/PGRSketchGeometrySearchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F38AF5A19343EA800D4A38E /* Build configuration list for PBXProject "PGRSketchGeometrySearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F38AF8919343EA800D4A38E /* Debug */,
+				5F38AF8A19343EA800D4A38E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F38AF8B19343EA800D4A38E /* Build configuration list for PBXNativeTarget "PGRSketchGeometrySearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F38AF8C19343EA800D4A38E /* Debug */,
+				5F38AF8D19343EA800D4A38E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5F38AF8E19343EA800D4A38E /* Build configuration list for PBXNativeTarget "PGRSketchGeometrySearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F38AF8F19343EA800D4A38E /* Debug */,
+				5F38AF9019343EA800D4A38E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F38AF5719343EA800D4A38E /* Project object */;
+}
