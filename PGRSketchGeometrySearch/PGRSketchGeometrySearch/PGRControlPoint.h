@@ -12,6 +12,8 @@
 
 @property (nonatomic) CGPoint coordinates;
 @property (strong, nonatomic) NSMutableDictionary *referredStroke;
+
+// ISSUE: double strong reference
 @property (strong, nonatomic) NSMutableDictionary *connectedControlPoints;
 
 // designated init method

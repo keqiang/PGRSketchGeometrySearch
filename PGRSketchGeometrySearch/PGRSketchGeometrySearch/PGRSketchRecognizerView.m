@@ -35,6 +35,7 @@
 }
 
 - (void)setup {
+    
     touchPoints = [NSMutableArray array];
     controlPoints = [[NSMutableDictionary alloc] init];
     recognizedShape = [NSMutableArray array];
@@ -193,6 +194,7 @@
                 PGRControlPoint *cp4 = [controlPoints objectForKey:[NSValue valueWithCGPoint:cgLT]];
                 
                 // add the conneting status to the adjacent table
+                // ISSUE : memory leak
                 [[cp1 connectedControlPoints] setObject:cp2 forKey:[cp2 getKey]];
                 [[cp1 connectedControlPoints] setObject:cp4 forKey:[cp4 getKey]];
                 [[cp2 connectedControlPoints] setObject:cp1 forKey:[cp1 getKey]];
@@ -295,6 +297,7 @@
             
             if ([candidateIndice count]  < 2) {
                 if (newClosedShapeFormed) {
+                    // ISSUE: find unrecognized arc
                     if ([[startControlPoint referredStroke] count] > 0) {
                         NSArray *relatedStrokes = [[startControlPoint referredStroke] allValues];
                         for (PGRStroke *stroke in relatedStrokes) {
@@ -384,6 +387,8 @@
     [super touchesCancelled:touches withEvent:event];
 }
 
+
+// TODO: find new closed shape using DFS
 - (NSArray *)searchAndRecognizeFrom:(PGRControlPoint *)start to:(PGRControlPoint *)end withTurningPoints:(NSArray *)candidateIndice
 {
     NSMutableArray *result = [NSMutableArray array];
@@ -398,8 +403,6 @@
     if ([candidateIndice count] > 3) {
         return result;
     }
-    
-    
     
     return nil;
 }
